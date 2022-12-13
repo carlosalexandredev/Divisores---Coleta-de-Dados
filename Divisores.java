@@ -4,7 +4,7 @@ public class Divisores {
   public static void main(String[] args) {
 		long numero, i, cont=0;
 		numero = Long.parseLong(args[0]);
-		System.out.println("Calculando a quantidade de divisores para "+numero);
+		System.out.printf("{'entrada': '%s',",numero);
 		if (numero<=0) System.exit(0);
 		
 		long inicio, fim;
@@ -14,8 +14,8 @@ public class Divisores {
 		}
 		fim = System.currentTimeMillis();
 		double secs = (fim-inicio)/1000.0;
-		System.out.println("tempo gasto "+secs);
-		System.out.println("O numero de divisores e "+cont);
+		System.out.printf("'tempogasto': '%s',", secs);
+		System.out.printf("'divisores': '%s'}", cont);
   }
   
 }
